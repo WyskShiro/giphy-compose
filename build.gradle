@@ -1,0 +1,34 @@
+buildscript {
+    ext {
+        compose_version = '1.1.1'
+        //G
+        glide_version = '4.12.0'
+        //K
+        koin_version = '3.1.3'
+        //L
+        lifecycle_version = '2.2.0'
+        lottie_version = '3.7.0'
+        //M
+        mockk_version = '1.12.2'
+        moshi_version = '1.13.0'
+        //O
+        okhttp_version = '3.12.13'
+        okhttpInterceptor_version = '4.9.3'
+        //R
+        retrofit_version = '2.9.0'
+        rxAndroid_version = '2.1.1'
+        rxJava_version = '2.2.21'
+        //T
+        testx_version = '1.1.0'
+        testxCore_version = '1.4.0'
+    }
+}// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.application' version '7.1.2' apply false
+    id 'com.android.library' version '7.1.2' apply false
+    id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
