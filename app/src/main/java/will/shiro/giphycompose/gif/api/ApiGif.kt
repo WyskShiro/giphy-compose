@@ -6,5 +6,7 @@ import com.squareup.moshi.JsonClass
 @JsonClass(generateAdapter = true)
 data class ApiGif constructor(
     @Json(name = "id")
-    val id: String? = null
+    val id: String? = null,
+    @Json(name = "images")
+    val images: Map<String, ApiGifImage>? = null
 )
